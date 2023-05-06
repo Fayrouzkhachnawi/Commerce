@@ -15,7 +15,7 @@ app.use(cors())
 //BodyParser Middleware
 app.use(express.json());
 mongoose.set("strictQuery", false);
-mongoose.connect(process.env.DATABASE,{
+mongoose.connect(process.env.DATABASECLOUD,{
     useNewUrlParser: true,
     useUnifiedTopology: true
     })
